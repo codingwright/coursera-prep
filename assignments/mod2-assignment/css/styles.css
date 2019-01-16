@@ -1,4 +1,4 @@
-/* General Styles */
+/* Base Styles */
 
 body {
   background-color: tan;
@@ -6,6 +6,9 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+h1, p {
   font-family: 'Merriweather', serif;
 }
 
@@ -14,11 +17,13 @@ h1 {
   margin-bottom: 5%;
 }
 
+.row {
+  width: 100%;
+}
+
 .column {
   float: left;
-  position: relative;
   border: 1px solid black;
-  /* margin: 10% 3%; */
 }
 
 .column p {
@@ -26,12 +31,33 @@ h1 {
   padding: 3%;
 }
 
+.column p:nth-child(2) {
+  margin-top: 10%;
+}
+
+.section-header-wrap {
+  position: relative;
+}
+
 .section-header {
   position: absolute;
   right: 0;
   top: 0;
+  margin: 0;
   background-color: yellow;
   border: 1px solid black;
+}
+
+.header-1 {
+  background-color: #ff9800;
+}
+
+.header-2 {
+  background-color: #4CAF50;
+}
+
+.header-3 {
+  background-color: #8B0000;
 }
 
 .column-1 {
@@ -50,25 +76,26 @@ h1 {
 @media screen and (max-width: 767px) {
   .column {
     float: unset;
-  }
-  .section-header {
-    top: -2.5rem;
+    margin-bottom: 6%;
   }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .column-1, .column-2 {
-    width: 50%;
+    width: 44%;
+    margin: 0 3% 5%;
   }
   .column-3 {
     clear: both;
+    margin: 0 3%;
   }
 }
 
 /* Desktop */
 @media screen and (min-width: 992px) {
   .column {
-    width: 33.33%;
+    width: 29.33%;
+    margin: 0 2%;
   }
 }
