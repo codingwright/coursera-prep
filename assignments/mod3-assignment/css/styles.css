@@ -1,0 +1,25 @@
+body {
+  background-color: #E6E6FA;
+}
+
+p, a {
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+#header-nav {
+  background-color: gray;
+}
+
+.navbar {
+  background-color: #6f42c1;
+}
+
+ul.navbar-nav {
+  background-color: #b73aad94;
+}
+
+.navbar hr {
+  margin: 0;
+  border-top: 1px solid rgba(0,0,0,1);
+}
